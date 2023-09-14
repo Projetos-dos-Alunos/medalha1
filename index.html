@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    
+</head>
+<body>
+    <video id="video-background" autoplay loop muted>
+        <source src="Medalha1 (1).mp4" type="video/mp4">
+    </video>
+    <button id="parabens-button">Parabéns!</button>
+    <audio id="applause-sound">
+        <source src="aplausos1.wav" type="audio/mpeg">
+    </audio>
+    <script>
+        const parabensButton = document.getElementById('parabens-button');
+        const applauseSound = document.getElementById('applause-sound');
+
+        parabensButton.addEventListener('click', () => {
+            // Tocar o som de palmas
+            applauseSound.play();
+        });
+    </script>
+</body>
+</html>
